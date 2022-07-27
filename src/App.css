@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+* {
+  margin: auto;
+  padding: auto;
+  
+  /* height: auto; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrap {
+  font-family: "Prompt";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ .map {
+  height: 450px;
+  width: 550px;
+  /* border: 7px solid rgb(11, 242, 11); */
+  border-radius: 20px;
+  border: 3px solid white;
+  border-radius: 40px;
+  box-shadow: 1px 1px 20px white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mapcontainer {
+  flex-grow: 1;
+}
+
+.imagecontainer {
+  flex-grow: 1;
+  
+}
+
+.imgcontainer img {
+  /* border: 7px solid rgb(11, 242, 11); */
+  border-radius: 20px;
+  margin-left: 100px;
+  height: 450px;
+  width: 550px;
+  border: 3px solid white;
+  border-radius: 40px;
+  box-shadow: 1px 1px 20px white;
+}
+
+.gamecontainer {
+  /* background-image: linear-gradient(#0971c9, #5f23a5); */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin-top: 40px;
+
+}
+
+
+.scorecontainer {
+  display: flex;
   color: white;
+  padding-top: 60px;
+  font-family: 'Varela Round';
+  font-weight: 900;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.wrap {
+  /* background-color: black; */
+/* background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%); */
+background-color: rgb(7, 1, 84);
+height: 100vh;
+  /* width: 100vw; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header {
+  background-color: white;
+  background-color: rgb(7, 1, 84);
+  /* display: flex;
+  justify-content: center; */
+  padding-left: 650px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 20px;
+  color: white;
+  font-family: "Prompt";
+  /* font-weight: 600; */
+  font-size: 25px;
+  /* width: 100vw; */
 }
+
+.footer {
+  font-family: 'Prompt', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: white; */
+  background-color: rgb(7, 1, 84);
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 20px;
+  font-weight: 400;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 45px;
+  /* margin-left: 100px; */
+}
+
+a {
+  padding-left: 20px;
+}
+
+
+.footer a:hover {
+  text-decoration: none;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+.timer {
+  color: white;
+  /* border: 3px solid yellowgreen; */
+  /* background-color: white; */
+  border-radius: 20px;
+  padding: 15px;
+  font-size: 25px;
+  padding-left: 250px;
+
+}
+
+.score {
+  margin-left: 100px;
+  font-size: 25px;
+}
+
+.attempt {
+  font-size: 25px;
+  padding-right: 100px;
+  /* margin-left: 50px; */
+}
+
+.swal2-title {
+  font-family: 'Varela Round';
+  font-weight: 100;
+}
+
+/* .swal2-text {
+  font-family: "Prompt";
+
+} */
+
+
+ 

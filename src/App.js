@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import "./App.css";
+import { Header } from './Components/Header/Header';
+import Main from './Components/Main/Mainpage';
+import { Footer } from './Components/Footer/Footer';
+import GameAlmaty from './Components/Game/Almaty/GameAlmaty';
+import GameAstana from './Components/Game/Astana/GameAstana';
+import GameKazakhstan from './Components/Game/Kazakhstan/GameKazakhstan';
+import Scroll from './Scroll';
+import { Alert } from './Components/Game/Alert';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <> 
+    <BrowserRouter>
+    <Scroll/>
+    <Header/>
+    <Routes>
+    
+      <Route path='/' element={<Main />}/>
+      <Route path='/Almaty' element={<GameAlmaty />} />
+      <Route path='/Nursultan' element={<GameAstana />}/>
+      <Route path='/Kazakhstan' element={<GameKazakhstan />}/>
+
+    </Routes>
+    <Footer/>
+    </BrowserRouter>
+    </>
+  
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,126 @@
+
+.wrapper {
+    background-color: rgb(7, 1, 84);
+    /* background-image: linear-gradient(to left,#C33764, #1D2671); */
+    color: white;
+    margin: auto;
+    padding-bottom: 120px;
+}
+
+.textcontainer {
+  /* padding: 30px; */
+  font-size: 30px;
+
+
+}
+
+.h1 {
+    display:flex;
+    justify-content: center;
+    /* padding-bottom: 20px; */
+    font-family: 'Prompt', sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.h3 {
+    color: yellowgreen;
+    display:flex;
+    justify-content: center;
+    padding-bottom: 70px;
+    font-family: 'Prompt', sans-serif;
+    /* font-size: 40px; */
+    
+}
+.btn {
+    background-color: transparent;
+   
+   
+    color: white;
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+    border: 5px solid white;
+    border-radius: 50px;
+    
+    /* margin-right: 300px; */
+    padding: 20px;
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+    font-size: 25px;
+    font-family: "Prompt";
+    font-weight: 100;
+   
+    
+    
+}
+
+.button {
+    margin: 20px;
+}
+
+.h2 {
+    padding-left: 70px;
+    padding-bottom: 30px;
+    font-family: 'Prompt', sans-serif;
+    font-size: 40px;
+    /* margin: 20px; */
+    
+}
+
+.description {
+    font-family: 'Kanit', sans-serif;
+    padding: 20px;
+}
+
+
+.h2name {
+    font-family: 'Prompt', sans-serif;
+    font-size: 30px;
+    color: rgb(230, 214, 3);
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.mainimg {
+    display: flex;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 30px;
+   
+}
+
+.level{
+
+    margin: 50px;
+    display: flex;
+    border: 3px solid white;
+    border-radius: 40px;
+    box-shadow: 1px 1px 20px white;
+}
+
+h3 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.levelcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.desc {
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 15px;
+    margin: 10px;
+}
+
+
