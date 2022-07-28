@@ -5,6 +5,9 @@
     color: white;
     margin: auto;
     padding-bottom: 120px;
+    /* border-top: 2px outset white; */
+    /* box-shadow: 1px 1px 30px white; */
+    padding-top: 20px;
 }
 
 .textcontainer {
@@ -99,16 +102,23 @@
     margin: 50px;
     display: flex;
     border: 3px solid white;
-    border-radius: 40px;
+    border-radius: 20px;
     box-shadow: 1px 1px 20px white;
 }
+
+
+  .level:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
 
 h3 {
     font-size: 20px;
     display: flex;
     justify-content: center;
    
-}
+} 
 
 .levelcontainer {
     display: flex;
@@ -124,3 +134,15 @@ h3 {
 }
 
 
+.btn {
+    opacity: 1;
+  }
+  
+  .btn:hover {
+    opacity: 0.6;
+  }
+
+  .earth {
+    background-color: transparent;
+    
+  }

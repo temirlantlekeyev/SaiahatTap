@@ -8,7 +8,17 @@ export const Header = () => {
 
     return (
         <>
+        <div className="headercontainer">
         <div className="header" onClick={()=>{navigater('/')}}><FaMapMarkedAlt/>Nomad location</div>
+        {/* <div className="language">
+        <div>Language:</div>
+        <select className="select">
+            <option>English</option>
+            <option>Русский</option>
+            <option>Қазақша</option>
+        </select>
+        </div> */}
+        </div>
         </>
     )
 }

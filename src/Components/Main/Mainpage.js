@@ -6,10 +6,6 @@ import kaz from "../../Assets/kaz.jpg";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-import * as React from 'react';
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
-
 
 const Main = () => {
     const navigate = useNavigate()

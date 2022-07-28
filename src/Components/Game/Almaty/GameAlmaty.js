@@ -88,7 +88,7 @@ const alertSuccess = () => {
 
 function GameAlmaty() {
 
-  const [second, setSecond] = useState(30)
+  const [second, setSecond] = useState(20)
   const [minute, setMinute] = useState(0)
   const [success, setSuccess] = useState(false)
   // const [showedAlert, setShowedAlert] = useState(false);
@@ -99,7 +99,24 @@ function GameAlmaty() {
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
 
   let timer;
+  const [firstMount, setFirstMount] = useState(false);
   useEffect (() => {
+    if (firstMount) return;
+    Swal.fire({
+      icon: 'info',
+      title: 'How to play?',
+      text: 'You have to guess celebrated places and mark on the map by selecting the desired marker! However, you have only 3 chances and 20 seconds for each picture. Good luck!',
+      confirmButtonText: "Start!",
+      confirmButtonColor: "green",
+  
+    }).then(() => {
+      setFirstMount(true)
+    })
+   
+  }, [firstMount, setFirstMount])
+
+  useEffect(() => {
+    if (firstMount) {
       timer = setInterval(() => {
         setSecond(second-1);
         if(second === 0) {
@@ -112,8 +129,13 @@ function GameAlmaty() {
           setTimeout(setSecond(1))
         }
       }, 1000)
-    return () => clearInterval(timer);
-  })
+    }
+    return () => {
+      if (timer)
+        clearInterval(timer)
+    };
+  }, [firstMount, second])
+
 
   const imgFindIndex = coordinatesData.findIndex((elem, index) => index === currentImgIndex )
   // console.log(imgFindIndex)
@@ -129,10 +151,10 @@ function GameAlmaty() {
         
       } else if (places.id -1 === imgFindIndex) {
           setCurrentImgIndex(currentImgIndex + 1)
-          // setCurrentImgIndex((Math.floor(Math.random() * coordinatesData.length)))
+          // setCurrentImgIndex(currentImgIndex + (Math.floor(Math.random() * coordinatesData.length)))
           alertSuccess();
           setScores(scores+1);
-          setSecond(15)
+          setSecond(20)
         } else if (places.id -1 !== imgFindIndex && attempt === 2) {
           setAttempt(attempt+1)
           alertAttempt();
@@ -151,7 +173,6 @@ function GameAlmaty() {
 
   return (
     <>
-    
     <div className='wrap'>
       <div className='scorecontainer'>
       <h2 className='score'><MdSportsScore/>Your score: {scores} out of 30</h2>
@@ -165,7 +186,6 @@ function GameAlmaty() {
         <Map coordinates={coordinatesData} onMarkerClick={onMarkerClick} currentImgIndex={currentImgIndex} />
         </div>
     </div> 
-      <Alert />
       </>
       
   );

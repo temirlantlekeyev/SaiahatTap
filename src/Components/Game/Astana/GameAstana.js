@@ -87,26 +87,47 @@ const alertSuccess = () => {
 
 function GameAstana() {
 
-  const [second, setSecond] = useState(30)
+  const [second, setSecond] = useState(20)
   const [minute, setMinute] = useState(0)
 
   let timer;
+  const [firstMount, setFirstMount] = useState(false);
   useEffect (() => {
-    timer = setInterval(() => {
-      setSecond(second-1);
-      if(second === 0) {
-        setSecond(0)
-        alertFail();
+    if (firstMount) return;
+    Swal.fire({
+      icon: 'info',
+      title: 'How to play?',
+      text: 'You have to guess celebrated places and mark on the map by selecting the desired marker! However, you have only 3 chances and 25 seconds for each picture. Good luck!',
+      confirmButtonText: "Start!",
+      confirmButtonColor: "green",
+  
+    }).then(() => {
+      setFirstMount(true)
+    })
+   
+  }, [firstMount, setFirstMount])
+
+  useEffect(() => {
+    if (firstMount) {
+      timer = setInterval(() => {
+        setSecond(second-1);
+        if(second === 0) {
+          setSecond(0)
+          alertFail();
+          clearInterval(timer)
+        } if (scores === 30) {
+          setTimeout(setSecond(1))
+        }if (attempt === 3) {
+          setTimeout(setSecond(1))
+        }
+      }, 1000)
+    }
+    return () => {
+      if (timer)
         clearInterval(timer)
-      } if (scores === 22) {
-        setTimeout(setSecond(1))
-      }if (attempt === 3) {
-        setTimeout(setSecond(1))
-      }
-    }, 1000)
-  return () => clearInterval(timer);
-})
- 
+    };
+  }, [firstMount, second])
+
   const [attempt, setAttempt] = useState(0)
 
   // const navigater = useNavigate()
@@ -137,7 +158,7 @@ function GameAstana() {
           // setCurrentImgIndex((currentImgIndex + Math.floor(Math.random() * coordinatesData.length)))
           alertSuccess();
           setScores(scores+1);
-          setSecond(15);
+          setSecond(20);
         } else if (places.id -1 !== imgFindIndex && attempt === 2) {
           setAttempt(attempt+1)
           alertAttempt();
@@ -169,8 +190,6 @@ function GameAstana() {
         <Map coordinates={coordinatesData} onMarkerClick={onMarkerClick} currentImgIndex={currentImgIndex} /> 
       </div>
       </div>
-      <Alert/>
-     
       </>
       
   );

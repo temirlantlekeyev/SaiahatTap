@@ -66,22 +66,6 @@ height: 100vh;
   /* width: 100vw; */
 }
 
-.header {
-  background-color: white;
-  background-color: rgb(7, 1, 84);
-  /* display: flex;
-  justify-content: center; */
-  padding-left: 650px;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  font-size: 20px;
-  color: white;
-  font-family: "Prompt";
-  /* font-weight: 600; */
-  font-size: 25px;
-  /* width: 100vw; */
-}
-
 .footer {
   font-family: 'Prompt', sans-serif;
   display: flex;
@@ -147,6 +131,35 @@ a, a:visited, a:hover, a:active {
   font-family: "Prompt";
 
 } */
+
+.language {
+  padding: 10px;
+  padding-left: 450px;
+  font-size: 20px;
+  flex-grow: 1;
+  
+}
+
+.headercontainer {
+  display: flex;
+  
+  background-color: rgb(7, 1, 84);
+  /* padding-left: 650px; */
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 10px;
+  color: white;
+  font-family: "Prompt";
+  /* width: 100vw; */
+}
+
+.header {
+  font-size: 35px;
+  flex-grow: 1;
+  padding-left: 600px;
+  
+}
+
 
 
  
