@@ -11,8 +11,8 @@ export const Footer = () => {
         <div className="links">
         <a href="https://t.me/temirlan_tlk" target="_blank"><FaTelegram/></a>
         <a href="https://www.instagram.com/temirlan_tlk/" target="_blank"><FaInstagram/></a>
-        <a href="https://github.com/temirlantlekeyev" target="_blank"><FaLinkedin/></a>
-        <a href="https://www.linkedin.com/in/temirlan-tlekeyev-735691218/" target="_blank"><FaGithubSquare/></a>
+        <a href="https://github.com/temirlantlekeyev" target="_blank"><FaLinkedin/><FaGithubSquare/></a>
+        <a href="https://www.linkedin.com/in/temirlan-tlekeyev-735691218/" target="_blank"><FaLinkedin/></a>
         </div>
     
         </div>

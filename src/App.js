@@ -7,7 +7,7 @@ import GameAlmaty from './Components/Game/Almaty/GameAlmaty';
 import GameAstana from './Components/Game/Astana/GameAstana';
 import GameKazakhstan from './Components/Game/Kazakhstan/GameKazakhstan';
 import Scroll from './Scroll';
-import { Alert } from './Components/Game/Alert';
+
 
 
 function App() {

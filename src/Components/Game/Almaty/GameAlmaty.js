@@ -8,8 +8,7 @@ import {MdSportsScore} from "react-icons/md"
 import {BiTimer} from "react-icons/bi"
 import Main from '../../Main/Mainpage';
 import { useNavigate } from "react-router-dom";
-import { Alert } from '../Alert';
-import { Timer } from '../../Timer';
+
 
 
 const jsConfetti = new JSConfetti();

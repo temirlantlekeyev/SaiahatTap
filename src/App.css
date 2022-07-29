@@ -160,6 +160,21 @@ a, a:visited, a:hover, a:active {
   
 }
 
+.kz {
+  width: 40px;
 
+}
+
+.en {
+  width: 40px;
+}
+
+.ru {
+  width: 40px;
+}
+
+.headercontainer img {
+  padding-right: 20px;
+}
 
  

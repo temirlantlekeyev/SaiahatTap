@@ -7,7 +7,6 @@ import JSConfetti from "js-confetti";
 import {MdSportsScore} from "react-icons/md"
 import Main from '../../Main/Mainpage';
 import { useNavigate } from "react-router-dom";
-import { Alert } from '../Alert';
 import { useEffect } from 'react';
 
 

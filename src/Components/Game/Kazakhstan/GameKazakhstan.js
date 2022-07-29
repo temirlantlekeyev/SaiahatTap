@@ -5,7 +5,6 @@ import Map from './Map';
 import Swal from "sweetalert2";
 import JSConfetti from "js-confetti";
 import {MdSportsScore} from "react-icons/md";
-import { Alert } from '../Alert';
 import { useEffect } from 'react';
 
 
