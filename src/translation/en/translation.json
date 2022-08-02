@@ -1,0 +1,36 @@
+{
+    "let's guess": "Let's guess and explore famous places all over Kazakhstan!",
+    "choose your destination": "Choose your destination:",
+    "almaty": "Almaty",
+    "almaty_desc": "Guess the 30 most visited and favorite places of Almaty residents!",
+    "astana": "Nur-Sultan",
+    "astana_desc": "Guess the 22 most visited and favorite places of Nur-Sultan residents!",
+    "kazakhstan": "Kazakhstan",
+    "kazakhstan_desc": "Guess the most visited and favorite places of Kazakhstan residents and tourists from all over the world!",
+    "play": "Play",
+    "created by": "Created by Temirlan Tlekeyev",
+    "your score": "Your score:",
+    "out of": "out of",
+    "timer": "timer",
+    "attempts": "attempts",
+
+    "how to play": "How to play?",
+    "how to text": "You have to guess celebrated places and mark on the map by selecting the desired marker! However, you have only 3 chances and 20 seconds for each picture. Good luck!",
+    "start": "Start!",
+
+    "try again": "Oops... Try again",
+
+    "time is up": "Time is up!",
+    "would you like to try again": "Would you like to try again?",
+
+    "attempts are over": "Your attempts are over!",
+    "would you like to try again or select next level": "Would you like to try again or select next level?",
+    "yes,try again": "Yes, try again!",
+    "main page": "Main page!",
+
+    "correct": "Correct!",
+
+    "congrats": "Congrats! You win!",
+    "would you like to go to the next level": "Would you like to go to the next level?",
+    "select": "Select"
+}

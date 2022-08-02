@@ -1,18 +1,18 @@
 
 .wrapper {
     background-color: rgb(7, 1, 84);
-    /* background-image: linear-gradient(to left,#C33764, #1D2671); */
     color: white;
-    margin: auto;
     padding-bottom: 120px;
-    /* border-top: 2px outset white; */
-    /* box-shadow: 1px 1px 30px white; */
     padding-top: 20px;
+    box-shadow: 3px 1px 25px white;
+
+   
 }
 
 .textcontainer {
   /* padding: 30px; */
   font-size: 30px;
+ 
 
 
 }
@@ -123,6 +123,7 @@ h3 {
 .levelcontainer {
     display: flex;
     justify-content: center;
+
 }
 
 .desc {

@@ -5,9 +5,13 @@ import tse from "../../Assets/tse.jpg";
 import kaz from "../../Assets/kaz.jpg";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 
 const Main = () => {
+
+    const { t } = useTranslation() 
+
     const navigate = useNavigate()
 
     const [start, setStart] = useState()
@@ -25,8 +29,9 @@ const Main = () => {
         <div className="wrapper">
             <div className="textcontainer">
                 <h1 className="h1">Nomad location</h1>
-                
-                <h3 className="h3">Let's guess and explore famous places all over Kazakhstan!</h3>
+
+                {/* <h3>{t(`let's guess`)} </h3> */}
+                <h3 className="h3">Let's guess and explore famous places all over Kazakhstan together!</h3>
             </div>
                 <div className="destination">
                 <h1 className="h2">Choose your destination:</h1>

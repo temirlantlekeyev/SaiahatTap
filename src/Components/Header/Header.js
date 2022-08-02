@@ -3,25 +3,28 @@ import { useNavigate } from "react-router-dom";
 import kz from "../../Assets/kz.png";
 import ru from "../../Assets/russia.png";
 import en from "../../Assets/england.png";
+import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 export const Header = () => {
-  
+    
+    const {t} = useTranslation();
+
+    const [change, setChange] = useState(null);
+    const handleChange = (event) => {
+        setChange(event.target.value)
+    }
+
     const navigater = useNavigate()
 
     return (
         <>
         <div className="headercontainer">
         <div className="header" onClick={()=>{navigater('/')}}><FaMapMarkedAlt/>Nomad location</div>
-        <img className="en" src={en} />
-        <img className="kz" src={kz}/>
-        <img className="ru" src={ru}/>
-        {/* <div className="language">
-        <div>Language:</div>
-        <select className="select">
-            <option>English</option>
-            <option>Русский</option>
-            <option>Қазақша</option>
-        </select>
+        {/* <div className="links">
+        <img className="en" onClick={handleChange} src={en} />
+        <img className="kz" onClick={handleChange} src={kz}/>
+        <img className="ru" onClick={handleChange} src={ru}/>
         </div> */}
         </div>
         </>

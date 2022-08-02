@@ -174,12 +174,16 @@ function GameAstana() {
       }
 
   return (
-    <>
+    
     <div className='wrap'>
       <div className='scorecontainer'>
+      <div className='scores'>
       <h2 className='score'><MdSportsScore/>Your score: {scores} out of 22</h2>
+      </div>
+      <div className='timercontainer'>
       <h4 className='timer'>Timer: {minute < 10? "0"+minute : minute}:{second < 10? "0"+second : second} </h4>
       <h4 className='attempt'>Attempts: {attempt}/3</h4>
+      </div>
       </div>
         {/* <div>{coordinatesData}</div> */}
       <div className='gamecontainer'>
@@ -189,7 +193,7 @@ function GameAstana() {
         <Map coordinates={coordinatesData} onMarkerClick={onMarkerClick} currentImgIndex={currentImgIndex} /> 
       </div>
       </div>
-      </>
+  
       
   );
 }
