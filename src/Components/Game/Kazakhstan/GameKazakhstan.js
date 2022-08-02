@@ -93,7 +93,7 @@ function GameKazakhstan() {
     Swal.fire({
       icon: 'info',
       title: 'How to play?',
-      text: 'You have to guess celebrated places and mark on the map by selecting the desired marker! However, you have only 3 chances and 25 seconds for each picture. Good luck!',
+      text: 'You have to guess celebrated places and mark on the map by selecting the desired marker! However, you have only 3 chances and 20 seconds for each picture. Good luck!',
       confirmButtonText: "Start!",
       confirmButtonColor: "green",
   
