@@ -78,7 +78,7 @@ const alertSuccess = () => {
   Swal.fire({
     position: "center-center",
     icon: "success",
-    title: "Сorrect!",
+    title: "Correct!",
     showConfirmButton: false,
     timer: 1500,
   });
