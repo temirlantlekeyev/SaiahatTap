@@ -29,8 +29,6 @@ const Main = () => {
         <div className="wrapper">
             <div className="textcontainer">
                 <h1 className="h1">Nomad location</h1>
-
-                {/* <h3>{t(`let's guess`)} </h3> */}
                 <h3 className="h3">Let's guess and explore famous places all over Kazakhstan together!</h3>
             </div>
                 <div className="destination">

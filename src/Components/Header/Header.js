@@ -18,7 +18,6 @@ export const Header = () => {
     const navigater = useNavigate()
 
     return (
-        <>
         <div className="headercontainer">
         <div className="header" onClick={()=>{navigater('/')}}><FaMapMarkedAlt/>Nomad location</div>
         {/* <div className="links">
@@ -27,6 +26,5 @@ export const Header = () => {
         <img className="ru" onClick={handleChange} src={ru}/>
         </div> */}
         </div>
-        </>
     )
 }

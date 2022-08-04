@@ -6,6 +6,7 @@
 .wrap {
   background-color: rgb(7, 1, 84);
   height: 100vh;
+  box-shadow: 3px 1px 25px white;
 }
 
 .gamecontainer {
@@ -90,6 +91,7 @@
   font-size: 18px;
   padding: 20px;
   font-weight: 400;
+  box-shadow: 3px 1px 25px white;
 }
 
 .links {
@@ -156,9 +158,11 @@ a, a:visited, a:hover, a:active {
 }
 
 
-@media all and (max-width: 460px) {
+@media all and (max-width: 500px) {
+  
   .headercontainer{
-
+    overflow-x: hidden;
+    width: 21px;
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -170,24 +174,30 @@ a, a:visited, a:hover, a:active {
     display: grid ;
     flex-direction: row;
     justify-content: center;
-    padding-left: 430px;
+    padding-left: 410px;
     font-size: 30px;
   }
   .headercontainer img {
   width: 30px;
-  
   }
+
+
+
 
   .textcontainer {
     display: flex;
     flex-direction: column;
     justify-self: center;
-    padding-left: 60px;
+    padding-left: 55px;
  
   }
 
 
+
+
   .wrapper{
+    overflow-x: hidden;
+    width: 430px;
     display:inline-flex;
     flex-direction: column;
 
@@ -198,6 +208,12 @@ a, a:visited, a:hover, a:active {
     flex-direction: column;
     margin: -20px;
     
+  }
+
+
+  .wrap{
+    width: 110%;
+    padding-bottom: 50px;
   }
 
   .scorecontainer {
@@ -229,7 +245,10 @@ a, a:visited, a:hover, a:active {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  
   }
+
+  
 
   .imgcontainer img{
     width: 300px;
@@ -246,8 +265,35 @@ a, a:visited, a:hover, a:active {
 
 
   .footer {
+    width: 100%;
     display: flex;
     flex-direction: column;
+   
+  }
+}
+
+
+@media all and (max-width: 450px) {
+  .headercontainer{
+    /* overflow-x: hidden; */
+    width: 45px;
+  }
+
+  .wrapper{
+    overflow-x: hidden;
+    width: 455px;
+  }
+
+}
+
+@media all and (max-width: 450px) {
+  .footer{
+    width: 415px;
+  }
+
+  .wrap{
+    overflow-x: hidden;
+    width: 455px;
   }
 }
 

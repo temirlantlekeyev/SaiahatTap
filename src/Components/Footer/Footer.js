@@ -7,7 +7,6 @@ import n from "../../Assets/nfac.png"
 export const Footer = () => {
     return (
         <div className="footer">
-        
         <div className="nfac"><img  className="n" src={n}/>nfactorial.incubator 2022 </div>
         <div className="create">Created by Temirlan Tlekeyev</div> 
         
