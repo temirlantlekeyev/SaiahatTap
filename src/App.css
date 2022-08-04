@@ -248,6 +248,10 @@ a, a:visited, a:hover, a:active {
   
   }
 
+  .map{
+    border-radius: 40px;
+  }
+
   
 
   .imgcontainer img{
@@ -284,6 +288,10 @@ a, a:visited, a:hover, a:active {
     width: 455px;
   }
 
+  .map{
+    border-radius: 40px;
+  }
+
 }
 
 @media all and (max-width: 450px) {
@@ -295,6 +303,11 @@ a, a:visited, a:hover, a:active {
     overflow-x: hidden;
     width: 455px;
   }
+
+  .map{
+    border-radius: 40px;
+  }
+  
 }
 
  
