@@ -198,11 +198,13 @@ a, a:visited, a:hover, a:active {
   }
   .headercontainer img {
   width: 30px;
+  
   }
 
 .links{
   display: flex;
-  padding-right: 50px;
+  padding-right: 70px;
+ 
   /* padding-right: 1000px; */
 }
 
