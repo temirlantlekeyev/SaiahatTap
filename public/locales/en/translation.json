@@ -1,6 +1,6 @@
 {
-    "let's guess": "Let's guess and explore famous places all over Kazakhstan!",
-    "choose your destination": "Choose your destination:",
+    "let's guess": "Let's guess and explore famous places all over Kazakhstan together!",
+    "choose": "Choose your destination:",
     "almaty": "Almaty",
     "almaty_desc": "Guess the 30 most visited and favorite places of Almaty residents!",
     "astana": "Nur-Sultan",
@@ -11,8 +11,8 @@
     "created by": "Created by Temirlan Tlekeyev",
     "your score": "Your score:",
     "out of": "out of",
-    "timer": "timer",
-    "attempts": "attempts",
+    "timer": "Timer:",
+    "attempts": "Attempts:",
 
     "how to play": "How to play?",
     "how to text": "You have to guess celebrated places and mark on the map by selecting the desired marker! However, you have only 3 chances and 20 seconds for each picture. Good luck!",

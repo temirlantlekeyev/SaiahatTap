@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className="nfac"><img  className="n" src={n}/>nfactorial.incubator 2022 </div>
         <div className="create">Created by Temirlan Tlekeyev</div> 
         
-        <div className="links">
+        <div className="linksfoot">
         <a href="https://t.me/temirlan_tlk" target="_blank"><FaTelegram/></a>
         <a href="https://www.instagram.com/temirlan_tlk/" target="_blank"><FaInstagram/></a>
         <a href="https://github.com/temirlantlekeyev" target="_blank"><FaGithubSquare/></a>

@@ -94,12 +94,6 @@
   box-shadow: 3px 1px 25px white;
 }
 
-.links {
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 45px;
-  /* margin-left: 100px; */
-}
 
 a {
   padding-left: 20px;
@@ -123,6 +117,7 @@ a, a:visited, a:hover, a:active {
 .headercontainer {
   display: flex;
   flex-direction: row;
+  justify-self: flex-end;
   /* justify-content: center;
   align-items: center; */
   /* align-items: center; */
@@ -136,12 +131,27 @@ a, a:visited, a:hover, a:active {
   /* width: 100vw; */
 }
 
+.links {
+  /* display: flex;
+  justify-content: space-evenly;
+  font-size: 45px; */
+  /* margin-left: 100px; */
+  margin-right: 40px;
+  
+}
+
+.linksfoot{
+  display: flex;
+  flex-direction: row;
+}
+
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
   font-size: 35px;
+  margin-left: 660px;
   
 }
 
@@ -157,9 +167,13 @@ a, a:visited, a:hover, a:active {
   width: 60px;
 }
 
+.footer a{
+  font-size: 40px;
+}
+
 
 @media all and (max-width: 500px) {
-  
+
   .headercontainer{
     overflow-x: hidden;
     width: 21px;
@@ -169,19 +183,28 @@ a, a:visited, a:hover, a:active {
     padding: 10px;
     padding-right: 400px;
     font-size: 10px;
+    /* padding-right: 400px; */
+    
+   
   }
   .header {
     display: grid ;
+    width: auto;
     flex-direction: row;
     justify-content: center;
-    padding-left: 410px;
+    /* padding-left: 410px; */
     font-size: 30px;
+    /* padding-left: 1000px; */
   }
   .headercontainer img {
   width: 30px;
   }
 
-
+.links{
+  display: flex;
+  padding-right: 50px;
+  /* padding-right: 1000px; */
+}
 
 
   .textcontainer {
@@ -192,8 +215,15 @@ a, a:visited, a:hover, a:active {
  
   }
 
+  .h1{
+    padding-right: 25px;
+  }
 
+  .h3{
+    padding-right: 15px;
+  }
 
+ 
 
   .wrapper{
     overflow-x: hidden;
@@ -274,6 +304,8 @@ a, a:visited, a:hover, a:active {
     flex-direction: column;
    
   }
+
+
 }
 
 

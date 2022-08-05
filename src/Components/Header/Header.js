@@ -5,26 +5,32 @@ import ru from "../../Assets/russia.png";
 import en from "../../Assets/england.png";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import { internalFrenchkiss } from "../../kek";
 
 export const Header = () => {
     
-    const {t} = useTranslation();
+    const { t, i18n } = useTranslation();
 
-    const [change, setChange] = useState(null);
-    const handleChange = (event) => {
-        setChange(event.target.value)
-    }
+
+    const changeLanguage = (language) => {
+        internalFrenchkiss.locale(language);
+        i18n.changeLanguage(language);
+        
+      };
+      console.log(changeLanguage)
 
     const navigater = useNavigate()
 
     return (
         <div className="headercontainer">
-        <div className="header" onClick={()=>{navigater('/')}}><FaMapMarkedAlt/>Nomad location</div>
-        {/* <div className="links">
-        <img className="en" onClick={handleChange} src={en} />
-        <img className="kz" onClick={handleChange} src={kz}/>
-        <img className="ru" onClick={handleChange} src={ru}/>
-        </div> */}
+        <div className="header" onClick={()=>{navigater('/')}}><FaMapMarkedAlt/>SaıahatTap</div>
+        <div className="links">
+        <img className="en" onClick={() => changeLanguage("en")} src={en} />
+        <img className="kz" onClick={() => changeLanguage("kz")} src={kz}/>
+        <img className="ru" onClick={() => changeLanguage("ru")} src={ru}/>
+        </div>
         </div>
     )
 }
+
+export default Header;

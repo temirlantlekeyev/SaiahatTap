@@ -17,7 +17,7 @@
     justify-content: center;
     /* padding-bottom: 20px; */
     font-family: 'Prompt', sans-serif;
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 900;
 }
 
@@ -99,8 +99,12 @@
     border: 3px solid white;
     border-radius: 20px;
     box-shadow: 1px 1px 20px white;
+   
 }
 
+.description{
+    box-sizing:content-box;
+}
 
   .level:hover {
     -webkit-transform: scale(1.2);

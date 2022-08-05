@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 
 const Main = () => {
 
-    const { t } = useTranslation() 
+     
 
     const navigate = useNavigate()
 
@@ -20,31 +20,28 @@ const Main = () => {
         window.scrollTo(0, 0)
       }, [])
 
-    // const top = window.scrollTo({
-    //     top: 0, 
-    //     behavior: 'smooth'
-    //   })
 
+    const  { t }  = useTranslation();
     return (
         <div className="wrapper">
             <div className="textcontainer">
-                <h1 className="h1">Nomad location</h1>
-                <h3 className="h3">Let's guess and explore famous places all over Kazakhstan together!</h3>
+                <h1 className="h1">SaıahatTap</h1>
+                <h3 className="h3">{t("let's guess")}</h3>
             </div>
                 <div className="destination">
-                <h1 className="h2">Choose your destination:</h1>
+                    <h1 className="h2">{t("choose")}</h1>
+                {/* <h1 className="h2">Choose your destination:</h1> */}
                 </div>
             <div className="levelcontainer">
         
                 <div className="level">
                     <div className="description">
-                    <h2 className="h2name">Almaty</h2>
-                    <h3 className="desc">Guess the 30 most visited and favorite places <br/>of Almaty residents!
-                    </h3>
+                    <h2 className="h2name">{t("almaty")}</h2>
+                    <h3 className="desc">{t("almaty_desc")}</h3>
                     <img className="mainimg" src={ala}/>
                     <div className="button">
                     
-                        <button className="btn" onClick={()=>{navigate('/Almaty')}}><FaPlay/> Play</button>
+                        <button className="btn" onClick={()=>{navigate('/Almaty')}}><FaPlay/> {t("play")}</button>
                        
                     </div>
                     </div>
@@ -52,21 +49,21 @@ const Main = () => {
 
                 <div className="level">
                     <div className="description">
-                    <h2 className="h2name">Nur-Sultan</h2>
-                    <h3 className="desc">Guess the 22 most visited and favorite places <br/>of Nur-sultan residents!
+                    <h2 className="h2name">{t("astana")}</h2>
+                    <h3 className="desc">{t("astana_desc")}
                     </h3>
                     <img className="mainimg" src={tse}/>
-                    <div className="button"><button className="btn" onClick={()=>{navigate('/Nursultan')}}><FaPlay/> Play</button></div> 
+                    <div className="button"><button className="btn" onClick={()=>{navigate('/Nursultan')}}><FaPlay/>{t("play")}</button></div> 
                     </div>
                 </div>
 
                 <div className="level">
                     <div className="description">
-                    <h2 className="h2name">Kazakhstan</h2>
-                    <h3 className="desc">Guess the most visited and favorite places of <br/>Kazakhstan residents and tourists from <br/>all over the world!</h3>
+                    <h2 className="h2name">{t("kazakhstan")}</h2>
+                    <h3 className="desc">{t("kazakhstan_desc")}</h3>
                     <img className="mainimg" src={kaz}/>
                     <div className="button">
-                        <button className="btn" onClick={()=>{navigate('/Kazakhstan')}}><FaPlay/> Play</button>
+                        <button className="btn" onClick={()=>{navigate('/Kazakhstan')}}><FaPlay/>{t("play")}</button>
                     </div>
                     </div>
                 </div>

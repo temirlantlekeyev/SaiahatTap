@@ -6,21 +6,23 @@ import Swal from "sweetalert2";
 import JSConfetti from "js-confetti";
 import {MdSportsScore} from "react-icons/md";
 import { useEffect } from 'react';
-
+import { useTranslation } from "react-i18next";
+import frenchkiss from "frenchkiss";
+import { internalFrenchkiss } from '../../../kek';
 
 const jsConfetti = new JSConfetti();
 
 const alertAttempt = () => {
   Swal.fire({
-    title: 'Your attempts are over!',
-    text: "Would you like to try again or select next level?",
+    title: internalFrenchkiss.t('attempt'),
+    text: internalFrenchkiss.t('tryorselect'),
     icon: 'warning',
     allowOutsideClick: false,
     showCancelButton: true,
-    cancelButtonText: 'Main page!',
+    cancelButtonText: internalFrenchkiss.t('mainpage'),
     cancelButtonColor: '#3085d6',
     confirmButtonColor: 'green',
-    confirmButtonText: 'Yes, try again!'
+    confirmButtonText: internalFrenchkiss.t('yestry')
   }).then((result) => {
     if (result.isConfirmed) {
       window.location.href="/Kazakhstan"
@@ -32,15 +34,15 @@ const alertAttempt = () => {
 
 const alertFail = () => {
   Swal.fire({
-    title: 'Time is up!',
-    text: "Would you like to try again?",
+    title: internalFrenchkiss.t('time'),
+    text: internalFrenchkiss.t('tryorselect'),
     icon: 'warning',
     allowOutsideClick: false,
     confirmButtonColor: 'green',
     showCancelButton: true,
-    cancelButtonText: 'Main page!',
+    cancelButtonText: internalFrenchkiss.t('mainpage'),
     cancelButtonColor: '#3085d6',
-    confirmButtonText: 'Yes, try again!'
+    confirmButtonText: internalFrenchkiss.t('yestry')
   }).then((result) => {
     if (result.isConfirmed) {
       window.location.href="/Kazakhstan"
@@ -52,13 +54,13 @@ const alertFail = () => {
 
 const alertFinish = () => {
   Swal.fire({
-  title: 'Congrats! You win!',
-  text: "Would you like to go to the next level?",
-  icon: 'success',
-  showCancelButton: true,
-  confirmButtonColor: 'green',
-  cancelButtonColor: '#d33',
-  confirmButtonText: 'Select'
+    title: internalFrenchkiss.t('congrats'),
+    text: internalFrenchkiss.t('next'),
+    icon: 'success',
+    showCancelButton: true,
+    confirmButtonColor: 'green',
+    cancelButtonColor: '#d33',
+    confirmButtonText: internalFrenchkiss.t('select')
 }).then((result) => {
   if (result.isConfirmed) {
     window.location.href="/"
@@ -74,7 +76,7 @@ const alertSuccess = () => {
   Swal.fire({
     position: "center-center",
     icon: "success",
-    title: "Correct!",
+    title: internalFrenchkiss.t('correct'),
     showConfirmButton: false,
     timer: 1500,
   });
@@ -92,9 +94,9 @@ function GameKazakhstan() {
     if (firstMount) return;
     Swal.fire({
       icon: 'info',
-      title: 'How to play?',
-      text: 'You have to guess celebrated places and mark on the map by selecting the desired marker! However, you have only 3 chances and 20 seconds for each picture. Good luck!',
-      confirmButtonText: "Start!",
+      title: internalFrenchkiss.t('how'),
+      text: internalFrenchkiss.t('rule'),
+      confirmButtonText: internalFrenchkiss.t('start'),
       confirmButtonColor: "green",
   
     }).then(() => {
@@ -161,23 +163,26 @@ function GameKazakhstan() {
           Swal.fire ({
             position: "center-center",
             icon: "error",
-            title: "Oops... Try again",
+            title: internalFrenchkiss.t('error'),
             showConfirmButton: false,
             timer: 500
           })
         } 
       }
 
+      const  { t }  = useTranslation();
+
+
   return (
 
     <div className='wrap'>
       <div className='scorecontainer'>
         <div className='scores'>
-      <h2 className='score'><MdSportsScore/>Your score: {scores} out of 25</h2>
+      <h2 className='score'><MdSportsScore/>{t("your score")} {scores} {t("out of")} 25</h2>
       </div>
       <div className='timercontainer'>
-      <h4 className='timer'>Timer: {minute < 10? "0"+minute : minute}:{second < 10? "0"+second : second} </h4>
-      <h4 className='attempt'>Attempts: {attempt}/3</h4>
+      <h4 className='timer'>{t("timer")} {minute < 10? "0"+minute : minute}:{second < 10? "0"+second : second} </h4>
+      <h4 className='attempt'>{t("attempts")} {attempt}/3</h4>
       </div>
       </div>
       
