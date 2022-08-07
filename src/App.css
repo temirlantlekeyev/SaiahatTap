@@ -1,7 +1,10 @@
 * {
   margin: auto;
   padding: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
 
 .wrap {
   background-color: rgb(7, 1, 84);
@@ -151,13 +154,19 @@ a, a:visited, a:hover, a:active {
   justify-content: flex-end;
   align-items: flex-end;
   font-size: 35px;
-  margin-left: 660px;
+  margin-left: 650px;
   
 }
 
 .headercontainer img {
   width: 40px;
   padding: 10px;
+}
+
+.header:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .n {
@@ -172,7 +181,7 @@ a, a:visited, a:hover, a:active {
 }
 
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 420px) {
 
   body{
     overflow-x: hidden;

@@ -10,6 +10,8 @@ const Map = ({ coordinates, currentImgIndex, onMarkerClick }) => {
 
 const position = [ 43.238949, 76.889709];
 
+let markerLayer = L.marker([0, 0], { clickable: false });
+markerLayer.setOpacity(0);
 
 return (
   <div className="mapcontainer">
@@ -28,8 +30,9 @@ return (
               onMarkerClick(coordinates, e)
               console.log(e)
             },}}
-
-            >
+           
+            > 
+    
           </Marker> 
       ))}
    

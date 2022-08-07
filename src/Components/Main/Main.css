@@ -1,3 +1,8 @@
+/* *{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+} */
+
 
 .wrapper {
     background-color: rgb(7, 1, 84);
@@ -46,7 +51,7 @@
     padding-top: 10px ;
     padding-bottom: 10px ;
     font-size: 25px;
-    font-family: "Prompt";
+    font-family: 'Prompt', sans-serif;
     font-weight: 100;
    
     
@@ -55,6 +60,7 @@
 
 .button {
     margin: 20px;
+    font-family: 'Prompt', sans-serif;
 }
 
 .h2 {
@@ -132,6 +138,7 @@ h3 {
     font-weight: 100;
     font-size: 15px;
     margin: 10px;
+   
 }
 
 
@@ -146,4 +153,28 @@ h3 {
   .earth {
     background-color: transparent;
     
+  }
+
+  .en:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  .ru:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  .kz:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  a:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
   }
