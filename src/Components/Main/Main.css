@@ -175,3 +175,8 @@ h3 {
     -ms-transform: scale(1.2);
     transform: scale(1.2);
   }
+  @media only screen and (max-width:1300px) {
+    .header {
+      margin-left: 490px;
+    }
+  }
