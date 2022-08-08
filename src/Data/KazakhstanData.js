@@ -21,8 +21,13 @@ import rakhmanovskie from "../Assets/Kazakhstan/rakhmanovskie.jpg"
 import rixosaktau from "../Assets/Kazakhstan/rixosaktau.jpg"
 import tamgalytas from "../Assets/Kazakhstan/tanbalytas.jpg"
 import zaisan from "../Assets/Kazakhstan/zaisan.jpg"
-import lesnaya from "../Assets/Kazakhstan/lesnaya.jpg"
+import usturt from "../Assets/Kazakhstan/usturt.jpg"
 import korgalzhyn from "../Assets/Kazakhstan/korgalzhyn.jpg"
+import beketata from "../Assets/Kazakhstan/beketata.jpg"
+import baikonur from "../Assets/Kazakhstan/baikonur.jpg"
+import aksu from "../Assets/Kazakhstan/aksu.jpg"
+import ulytau from "../Assets/Kazakhstan/aksu.jpg"
+import akmechet from "../Assets/Kazakhstan/akmechet.jpg"
      
     export const coordinatesData = [      
         {
@@ -34,20 +39,19 @@ import korgalzhyn from "../Assets/Kazakhstan/korgalzhyn.jpg"
         },
         {
         "id":"2",
-        "name":"alakol",
-        "lat": "46.03722217124744",
-        "long":"81.76946333227849",
-        "url": alakol 
-        
-        },
-        {
-        "id":"3",
         "name":"altynemel",
         "lat": "44.006086531689895",
         "long":"78.84893345800887",
         "url": altynemel
-    
         },
+        {
+        "id":"3",
+        "name":"akmechet",
+        "lat": "43.00670737739997",
+        "long":"69.70358849260714",
+        "url": akmechet
+        },
+
         {
         "id":"4",
         "name":"aral",
@@ -66,6 +70,27 @@ import korgalzhyn from "../Assets/Kazakhstan/korgalzhyn.jpg"
         },
         {
         "id":"6",
+        "name":"alakol",
+        "lat": "46.03722217124744",
+        "long":"81.76946333227849",
+        "url": alakol 
+        },
+        {
+        "id":"7",
+        "name":"betet ata",
+        "lat": "43.59721234684995",
+        "long":"54.069870112568985",
+        "url": beketata 
+        },
+        {
+        "id":"8",
+        "name":"alakol",
+        "lat": "45.96481626561295",
+        "long":"63.305264254989325",
+        "url": baikonur 
+        },
+        {
+        "id":"9",
         "name":"balkhash",
         "lat": "46.512332127039514",
         "long":"74.2771220073124",
@@ -73,7 +98,7 @@ import korgalzhyn from "../Assets/Kazakhstan/korgalzhyn.jpg"
 
         },
         {
-        "id":"7",
+        "id":"10",
         "name":"bao",
         "lat": "43.051056881621385",
         "long":"76.985300375824",
@@ -81,7 +106,7 @@ import korgalzhyn from "../Assets/Kazakhstan/korgalzhyn.jpg"
         
         },
         {
-        "id":"8",
+        "id":"11",
         "name":"barkhan",
         "lat": "43.861873748264586",
         "long":"78.57000770977",
@@ -89,7 +114,7 @@ import korgalzhyn from "../Assets/Kazakhstan/korgalzhyn.jpg"
 
         },
         {
-        "id":"9",
+        "id":"12",
         "name":"bartogai",
         "lat": "43.351636515506925",
         "long":"78.50362250547487",
@@ -97,7 +122,7 @@ import korgalzhyn from "../Assets/Kazakhstan/korgalzhyn.jpg"
     
         },
         {
-        "id":"10",
+        "id":"13",
         "name":"bozzhyra",
         "lat": "43.41528897923914",
         "long":"54.0725708254215",
@@ -105,7 +130,7 @@ import korgalzhyn from "../Assets/Kazakhstan/korgalzhyn.jpg"
 
         },
         {
-        "id":"11",
+        "id":"14",
         "name":"burabai",
         "lat": "53.10183333580971",
         "long":"70.30508444405429",
@@ -113,7 +138,7 @@ import korgalzhyn from "../Assets/Kazakhstan/korgalzhyn.jpg"
 
         },
         {
-        "id":"12",
+        "id":"15",
         "name":"charyn",
         "lat": "43.351121052310965",
         "long":"79.07913086928266",
@@ -121,7 +146,7 @@ import korgalzhyn from "../Assets/Kazakhstan/korgalzhyn.jpg"
 
         },
         {
-        "id":"13",
+        "id":"16",
         "name":"issyk",
         "lat": "43.25286891342706",
         "long":"77.48528480504541",
@@ -129,7 +154,7 @@ import korgalzhyn from "../Assets/Kazakhstan/korgalzhyn.jpg"
 
         },
         {
-        "id":"14",
+        "id":"17",
         "name":"kaiyndy",
         "lat": "42.99014651246287",
         "long":"78.46626293677133",
@@ -137,7 +162,7 @@ import korgalzhyn from "../Assets/Kazakhstan/korgalzhyn.jpg"
     
         },
         {
-        "id":"15",
+        "id":"18",
         "name":"kapchagai",
         "lat": "43.81908533848986",
         "long":"77.57765465823111",
@@ -145,73 +170,87 @@ import korgalzhyn from "../Assets/Kazakhstan/korgalzhyn.jpg"
 
         },
         {
-        "id":"16",
+        "id":"19",
         "name":"katon",
         "lat": "49.175186239599654",
         "long":"85.60481677257853",
         "url": katon
         },
         {
-        "id":"17",
+        "id":"20",
         "name":"khantengri",
         "lat": "42.21188387571579",
         "long":"80.17371332794278",
         "url": khantengri
         },
         {
-        "id":"18",
+        "id":"21",
         "name":"kolsai",
         "lat": "42.935791252609626",
         "long":"78.32586762437734",
         "url": kolsai
         },
         {
-        "id":"19",
+        "id":"22",
         "name":"khodzha",
         "lat": "43.3024883588215",
         "long":"68.27276535744656",
         "url": khodzha
         },
         {
-        "id":"20",
+        "id":"23",
         "name":"rakhmanovskie",
         "lat": "49.533042208789084",
         "long":"86.51245242775632",
         "url": rakhmanovskie
         },
         {
-        "id":"21",
+        "id":"24",
         "name":"rixosaktau",
         "lat": "43.50679423653745",
         "long":"51.29738832881734",
         "url": rixosaktau
         },
         {
-        "id":"22",
+        "id":"25",
         "name":"tamgaltas",
         "lat": "44.061492544789935",
         "long":"76.99622324095215",
         "url": tamgalytas
         },
         {
-        "id":"23",
+        "id":"26",
         "name":"zaisan",
         "lat": "48.03697978710131",
         "long":"83.88133410221211",
         "url": zaisan
         },
         {
-        "id":"24",
-        "name":"lesnaya",
-        "lat": "43.22438528039861",
-        "long":"77.14862295606049",
-        "url": lesnaya
+        "id":"27",
+        "name":"usturt",
+        "lat": "43.165933941070364",
+        "long":"54.597095873640384",
+        "url": usturt
         },
         {
-        "id":"25",
+        "id":"28",
         "name":"korgalzhyn",
         "lat": "50.44775566932032",
         "long":"69.27208922277173",
         "url": korgalzhyn
-        }               
+        },
+        {
+        "id":"29",
+        "name":"aksu",
+        "lat": "42.29248987517321",
+        "long":"70.6798352774251",
+        "url": aksu
+        },
+        {
+        "id":"30",
+        "name":"ulytau",
+        "lat": "48.64487470336655",
+        "long":"66.94621720660655",
+        "url": ulytau
+        }             
     ]

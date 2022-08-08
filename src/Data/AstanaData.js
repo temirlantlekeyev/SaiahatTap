@@ -2,7 +2,7 @@ import baiterek from "../Assets/Astana/baiterek.jpg"
 import akorda from "../Assets/Astana/akorda.jpg"
 import opera from "../Assets/Astana/opera.jpg"
 import khanshatyr from "../Assets/Astana/khanshatyr.jpg"
-import nu from "../Assets/Astana/nu.jpg"
+import nu from "../Assets/Astana/nu2.jpg"
 import abudhabi from "../Assets/Astana/abudhabi.jpg"
 import expo from "../Assets/Astana/expo.jpg"
 import arena from "../Assets/Astana/arena.jpg"
@@ -13,13 +13,16 @@ import most from "../Assets/Astana/most.jpg"
 import hub from "../Assets/Astana/hub.jpg"
 import garden from "../Assets/Astana/garden.jpg"
 import beijing from "../Assets/Astana/beijing.jpg"
-import senat from "../Assets/Astana/senat.jpg"
+import dvorecnezavisimosty from "../Assets/Astana/dvorecnezavisimosty.jpg"
 import mosque from "../Assets/Astana/mosque.jpg"
 import shabyt from "../Assets/Astana/shabyt.jpg"
 import airportast from "../Assets/Astana/airport.jpg"
 import museum from "../Assets/Astana/museum.jpg"
 import ritz from "../Assets/Astana/ritz.jpg"
 import hilton from "../Assets/Astana/hilton.jpg"
+import abunasr from "../Assets/Astana/abunasr.jpg"
+import library from "../Assets/Astana/library.jpg"
+import concertzal from "../Assets/Astana/concertzal.jpg"
      
     export const coordinatesData = [      
         {
@@ -143,10 +146,10 @@ import hilton from "../Assets/Astana/hilton.jpg"
         },
         {
         "id":"16",
-        "name":"senat",
-        "lat": "51.127971268044135",
-        "long":"71.44144306043356",
-        "url": senat
+        "name":"dvorecnezavisimosty",
+        "lat": "51.12077709395178",
+        "long":"71.47221743986039",
+        "url": dvorecnezavisimosty
         },
         {
         "id":"17",
@@ -189,5 +192,26 @@ import hilton from "../Assets/Astana/hilton.jpg"
         "lat": "51.09095617708231",
         "long":"71.41095577526036",
         "url": hilton
-        }             
+        },
+        {
+        "id":"23",
+        "name":" abunasr",
+        "lat": "51.12676348204935",
+        "long":"71.4157474263653",
+        "url": abunasr
+        },
+        {
+        "id":"24",
+        "name":" library",
+        "lat": "51.1164735129367",
+        "long":"71.44305039937424",
+        "url": library
+        },  
+        {
+        "id":"25",
+        "name":" concertzal",
+        "lat": "51.12239026518662",
+        "long":"71.44183965519998",
+        "url": concertzal
+        },         
     ]

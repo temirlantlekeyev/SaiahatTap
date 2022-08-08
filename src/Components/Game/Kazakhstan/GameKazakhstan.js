@@ -145,7 +145,7 @@ function GameKazakhstan() {
   const onMarkerClick = (coordinatesData, e) => {
     const places = coordinatesData.find( (place) => 
       place.lat == e.latlng.lat && place.long == e.latlng.lng);
-      if (scores === 24 && places.id -1 === imgFindIndex) {
+      if (scores === 29 && places.id -1 === imgFindIndex) {
         setScores(scores+1)
         alertFinish();
       } 
@@ -178,7 +178,7 @@ function GameKazakhstan() {
     <div className='wrap'>
       <div className='scorecontainer'>
         <div className='scores'>
-      <h2 className='score'><MdSportsScore/>{t("your score")} {scores} {t("out of")} 25</h2>
+      <h2 className='score'><MdSportsScore/>{t("your score")} {scores} {t("out of")} 30</h2>
       </div>
       <div className='timercontainer'>
       <h4 className='timer'>{t("timer")} {minute < 10? "0"+minute : minute}:{second < 10? "0"+second : second} </h4>

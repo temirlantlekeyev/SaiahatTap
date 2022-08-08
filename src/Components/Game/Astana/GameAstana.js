@@ -184,7 +184,7 @@ function GameAstana() {
     <div className='wrap'>
       <div className='scorecontainer'>
       <div className='scores'>
-      <h2 className='score'><MdSportsScore/>{t("your score")} {scores} {t("out of")} 22</h2>
+      <h2 className='score'><MdSportsScore/>{t("your score")} {scores} {t("out of")} 25</h2>
       </div>
       <div className='timercontainer'>
       <h4 className='timer'>{t("timer")} {minute < 10? "0"+minute : minute}:{second < 10? "0"+second : second} </h4>

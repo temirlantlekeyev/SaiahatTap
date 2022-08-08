@@ -108,9 +108,6 @@
    
 }
 
-.description{
-    /* box-sizing:content-box; */
-}
 
   .level:hover {
     -webkit-transform: scale(1.2);

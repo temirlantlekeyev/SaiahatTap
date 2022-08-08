@@ -9,16 +9,10 @@ import GameKazakhstan from './Components/Game/Kazakhstan/GameKazakhstan';
 import Scroll from './Scroll';
 import { internalFrenchkiss } from './kek';
 
-
-
-
-
 function App() {
 
   return (
-    <> 
-
- 
+    <>
     <BrowserRouter>
     <Scroll/>
     <Header/>
