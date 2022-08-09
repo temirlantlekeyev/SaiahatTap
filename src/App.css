@@ -357,4 +357,61 @@ a, a:visited, a:hover, a:active {
   
 }
 
+@media all and (min-width: 1200px) and (max-width: 1250px) {
+  .header{
+    margin-left: 480px;
+  }
+}
+
+@media all and (min-width: 1250px) and (max-width: 1350px) {
+  .header{
+    margin-left: 530px;
+  }
+}
+
+@media all and  (min-width: 700px) and (max-width: 900px) {
  
+  .wrapper{
+    width: 205%;
+    
+  }
+
+  .headercontainer{
+    width: 205%;
+    
+  }
+  .header{
+    margin-left: 680px;
+  }
+
+  .footer{
+    width: 200%;
+  }
+  .wrap{
+    width: 205%;
+  }
+}
+
+@media all and (min-width: 1400px) and (max-width: 1500px) {
+  .header{
+    margin-left: 605px;
+  }
+}
+
+@media all and (min-width: 1000px) and (max-width: 1200px) {
+  .headercontainer{
+    width: 123%;
+  }
+  .header{
+    margin-left: 520px;
+  }
+  .wrapper{
+    width: 123%;
+  }
+  .footer{
+    width: 119%;
+  }
+  .wrap{
+    width: 123%;
+  }
+}
