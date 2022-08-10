@@ -1,4 +1,6 @@
-import frenchkiss from "frenchkiss";
+import frenchkiss, { fallback } from "frenchkiss";
+
+
 
 frenchkiss.set('en', { 
     how: 'How to play?', 
@@ -64,6 +66,16 @@ frenchkiss.set('en', {
     select: "Таңдау"
   
   })
-  frenchkiss.fallback('en');
+
+  
+
+  frenchkiss.fallback(localStorage.getItem('lang') || 'en')
+  
+  // frenchkiss.fallback('ru');
+  // frenchkiss.fallback('kz')
+ 
+
+  
   export const internalFrenchkiss = frenchkiss;
+  
   

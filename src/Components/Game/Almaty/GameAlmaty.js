@@ -5,15 +5,15 @@ import Map from './Map';
 import Swal from "sweetalert2";
 import JSConfetti from "js-confetti";
 import {MdSportsScore} from "react-icons/md"
-import {BiTimer} from "react-icons/bi"
-import Main from '../../Main/Mainpage';
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import frenchkiss from "frenchkiss";
-import { internalFrenchkiss } from '../../../kek';
+import { internalFrenchkiss } from '../../../frenchkiss';
 
 
 const jsConfetti = new JSConfetti();
+
+
 
 const alertAttempt = () => {
   Swal.fire({
@@ -96,7 +96,6 @@ function GameAlmaty() {
   const [success, setSuccess] = useState(false)
   // const [showedAlert, setShowedAlert] = useState(false);
 
-  
 
  
   const [attempt, setAttempt] = useState(0)
@@ -178,7 +177,10 @@ function GameAlmaty() {
 
     
 
-    
+      const [local, setLocal] = useState()
+      const handleLang = (language) => {
+      localStorage.setLocal(language)
+      }
       
 
   return (

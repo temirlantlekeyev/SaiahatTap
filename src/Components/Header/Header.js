@@ -5,7 +5,8 @@ import ru from "../../Assets/russia.png";
 import en from "../../Assets/england.png";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
-import { internalFrenchkiss } from "../../kek";
+import { internalFrenchkiss } from "../../frenchkiss";
+import frenchkiss from "frenchkiss";
 
 export const Header = () => {
     
@@ -13,9 +14,10 @@ export const Header = () => {
 
 
     const changeLanguage = (language) => {
+        localStorage.setItem('lang', language)
         internalFrenchkiss.locale(language);
         i18n.changeLanguage(language);
-        
+      
       };
       console.log(changeLanguage)
 

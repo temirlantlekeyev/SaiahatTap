@@ -8,7 +8,7 @@ import {MdSportsScore} from "react-icons/md";
 import { useEffect } from 'react';
 import { useTranslation } from "react-i18next";
 import frenchkiss from "frenchkiss";
-import { internalFrenchkiss } from '../../../kek';
+import { internalFrenchkiss } from '../../../frenchkiss';
 
 const jsConfetti = new JSConfetti();
 
